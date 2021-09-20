@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import mysql.connector
 
-car_model = input('Insert the car name: ')
+car_model = input('Insert the car\'s name: ')
 
 res = requests.get('https://www.truecar.com/used-cars-for-sale/listings/' + car_model)
 soup = BeautifulSoup(res.text, 'html.parser')
